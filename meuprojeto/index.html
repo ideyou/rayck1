@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Linktree</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container text-center">
+
+    <img src="./profile.avif" alt="Foto" class="avatar">
+
+    <h1 class="title">Rayck Sena</h1>
+    <p class="subtitle">Future IT Technician</p>
+
+    <div class="links">
+
+      <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank" class="btn btn-primary">Best Game Of
+        All Time</a>
+      <a href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/" target="_blank" class="btn btn-secondary">Best Survival
+        Game</a>
+      <a href="https://www.rockstargames.com/VI" target="_blank" class="btn btn-dark">GOTY OF 2026</a>
+      <a href="https://store.steampowered.com/app/730/CounterStrike_2/" target="_blank" class="btn btn-dark">Best FPS Game</a>
+      <a href="https://store.steampowered.com/app/1693980/Dead_Space/" target="_blank" class="btn btn-dark">Best Horror Game</a>
+      <a href="https://store.steampowered.com/app/601150/Devil_May_Cry_5/" target="_blank" class="btn btn-dark">Best Action Game</a>
+    </div>
+
+    <button class="btn btn-outline" onclick="toggleTheme()">
+      Alternar Tema
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<audio id="musica" loop>
+    <source src="Song.mp3" type="audio/mp3">
+</audio>
+
+<button id="player">▶</button>
+
+<style>
+
+#player{
+
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.1);
+
+    color: white;
+
+    backdrop-filter: blur(5px);
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+</style>
+
+<script>
+
+const musica = document.getElementById("musica");
+
+const player = document.getElementById("player");
+
+let tocando = false;
+
+player.addEventListener("click", () => {
+
+    if(!tocando){
+
+        musica.play();
+
+        player.innerHTML = "⏸";
+
+        tocando = true;
+
+    } else {
+
+        musica.pause();
+
+        player.innerHTML = "▶";
+
+        tocando = false;
+
+    }
+
+});
+
+</script>

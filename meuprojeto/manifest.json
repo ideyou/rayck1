@@ -1,0 +1,19 @@
+{
+  "id": "GAMES",
+  "name": "lista de jogos favoritos do Rayck",
+  "short_name": "lista de jogos",
+  "scope": "./",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#FFFFFF",
+  "background_color": "#4C040F",
+  "icons": [
+    {
+      "src": "profile.avif",
+      "sizes": "any",
+      "type": "image/avif"
+    }
+  ],
+  "app_name": "Rayck Games List",
+  "description": "Meus jogos favoritos de cada genero"
+}
