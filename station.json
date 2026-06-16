@@ -1,0 +1,12 @@
+{
+  "color": "#FFFFFF",
+  "background_color": "#3A0108",
+  "icons": [
+    {
+      "src": "profile.avif",
+      "sizes": "any",
+      "type": "image/avif"
+    }
+  ],
+  "name": "Rayck Henrique" 
+}
