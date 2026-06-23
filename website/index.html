@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="barra-navegacao">
+        <a href="#ERROR_500" class="btn">Erro 500</a>
+        <a href="#ERROR_200" class="btn">Erro 200</a>
+        <a href="#ERROR_400" class="btn">Erro 400</a>
+        <a href="#ERROR_401" class="btn">Erro 401</a>
+        <a href="#ERROR_402" class="btn">Erro 402</a>
+        <a href="#ERROR_403" class="btn">Erro 403</a>
+        <a href="#ERROR_404" class="btn">Erro 404</a>
+    </div>
+
+    <!-- Seção: ERROR 500 -->
+    <div id="ERROR_500" class="linha text-branco" style="background-color: #1B75D2;">
+        <div class="col-5 d-flex alinhar-meio p-2">
+            <img class="img-error" src="assets/500.svg" alt="500 Internal Server Error">
+        </div>
+
+        <div class="col-7">
+            <h1>500 Internal Server Error</h1>
+            <p>
+                O servidor encontrou uma situação inesperada e não conseguiu concluir sua solicitação. Trata-se de um
+                erro interno da aplicação ou da infraestrutura.
+            </p>
+
+            <h3>Possíveis causas</h3>
+            <ul>
+                <li>Erro de programação.</li>
+                <li>Problemas de configuração.</li>
+                <li>Falha de integrações.</li>
+                <li>Serviços internos indisponíveis.</li>
+            </ul>
+
+            <h3>Como resolver</h3>
+            <ul>
+                <li>Tente novamente em alguns instantes.</li>
+                <li>Atualize a página.</li>
+                <li>Verifique o status do serviço.</li>
+                <li>Entre em contato com o suporte técnico.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Seção ERROR 200 -->
+
+    <div id="ERROR_200" class="linha text-preto" style="background-color: #33CC66;">
+        <div class="col-5 d-flex alinhar-meio p-2">
+            <img class="img-error" src="assets/200.svg" alt="200 OK">
+        </div>
+
+        <div class="col-7">
+            <h1> 200 OK</h1>
+            <p>
+                Sua solicitação foi processada com sucesso. O servidor recebeu, compreendeu e respondeu à requisição corretamente,
+                sem encontrar qualquer erro durante o processamento.
+            </p>
+
+            <h3>O que isso significa?</h3>
+            <ul>
+                <li> O recurso solicitado foi encontrado.</li>
+                <li>Os dados foram retornados corretamente.</li>
+                <li>A operação foi concluída com sucesso.</li>
+                <li>Não é necessária nenhuma ação adicional.</li>
+            </ul>
+
+            <h3>Próximos passos</h3>
+            <ul>
+                <li>Continue navegando normalmente.</li>
+                <li>Verifique as informações retornadas.</li>
+                <li>Ultilize os recursos disponíveis ná página.</li>
+                <li>Em integrações, prossiga com o fluxo esperado.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Seção ERROR 400-->
+
+    <div id="ERROR_400" class="linha text-branco" style="background-color: #820CCD;">
+        <div class="col-7">
+            <h1>400 Bad Request</h1>
+            <p>
+                O servidor recebeu a solicitação, porém não conseguiu interpretá-la devido a informações inválidas ou
+                mal formatadas enviadas pelo cliente.
+            </p>
+
+            <h3>Possíveis causas</h3>
+            <ul>
+                <li>URL digitada incorretamente.</li>
+                <li>Parâmetros inválidos em formulários.</li>
+                <li>Cookies ou cache corrompidos.</li>
+                <li>Dados enviados fora do formato esperado.</li>
+            </ul>
+
+            <h3>Como resolver</h3>
+            <ul>
+                <li>Revise o endereço acessado.</li>
+                <li>Atualize a página.</li>
+                <li>Limpe cache e cookies do navegador.</li>
+                <li>Tente repetir a operação.</li>
+            </ul>
+        </div>
+
+        <div class="col-5 d-flex alinhar-meio p-2">
+            <img class="img-error" src="assets/400.svg" alt="400 Bad Request">
+        </div>
+    </div>
+
+    <!-- Seção ERROR 401-->
+
+    <div id="ERROR_401" class="linha text-branco" style="background-color: #F9152A;">
+        <div class="col-5 d-flex alinhar-meio p-2">
+            <img class="img-error" src="assets/401.svg" alt="401 Unauthorized">
+        </div>
+
+        <div class="col-7">
+            <h1>401 Unauthorized</h1>
+            <p>
+                O recurso solicitado requer autenticação. O servidor não recebeu credenciais válidas ou a sessão atual
+                não possui autorização para continuar.
+            </p>
+
+            <h3>Possiveus causas</h3>
+            <ul>
+                <li>Usuário não autenticado.</li>
+                <li>Sessão expirada.</li>
+                <li>Token inválido ou expirado.</li>
+                <li>Credenciais incorretas.</li>
+            </ul>
+
+            <h3>Como resolver</h3>
+            <ul>
+                <li>Faça login novamente.</li>
+                <li>Confira usuário e senha.</li>
+                <li>Renove sua sessão.</li>
+                <li>Entre em contato com o administrador.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Seção ERROR 402 -->
+
+    <div id="ERROR_402" class="linha" style="background-color: #28A745;">
+        <div class="col-7">
+            <h1>402 Payment Required</h1>
+            <p>
+                O acesso ao recurso solicitado depende da validação de um pagamento, assinatura ou licença associada à sua conta.
+            </p>
+
+            <h3>Possiveis causas</h3>
+            <ul>
+                <li>Assinatura expirada.</li>
+                <li>Pagamento pendente.</li>
+                <li>Plano cancelado.</li>
+                <li>Falha na cobrança.</li>
+            </ul>
+
+            <h3>Como resolver</h3>
+            <ul>
+                <li>Verifique seu plano atual.</li>
+                <li>Atualize os dados de pagamento.</li>
+                <li>Confirme a compensação da cobrança.</li>
+                <li>Contate o suporte financeiro.</li>
+            </ul>
+        </div>
+
+        <div class="col-5 d-flex alinhar-meio p-2">
+            <img class="img-error" src="assets/402.svg" alt="402 Payment Required">
+        </div>
+    </div>
+
+    <!-- Seçao ERROR 403-->
+
+    <div id="ERROR_403" class="linha text-branco" style="background-color: #F9152A;">
+        <div class="col-5 d-flex alinhar-meio p-2">
+            <img class="img-error" src="assets/403.svg" alt="403 Forbidden">
+        </div>
+
+        <div class="col-7">
+            <h1>403 Forbidden</h1>
+            <p>
+                O servidor compreendeu sua solicitação, mas o acesso ao recurso foi negado. Você não possui permissões suficientes
+                para visualizar este conteúdo.
+            </p>
+
+            <h3>Possíveis causas</h3>
+            <ul>
+                <li>Permissões insuficientes.</li>
+                <li>Área restrita.</li>
+                <li>Políticas de segurança aplicadas.</li>
+                <li>Bloqueio por perfil ou IP.</li>
+            </ul>
+
+            <h3>Como resolver</h3>
+            <ul>
+                <li>Ultilize uma conta autorizada.</li>
+                <li>Solicite acesso ao administrador.</li>
+                <li>Verifique suas permissões.</li>
+                <li>Acesse recursos disponíveis ao seu perfil.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Secção ERROR 404-->
+
+    <div id="ERROR_404" class="linha text-branco" style="background-color: #F46701;">
+        <div class="col-7">
+            <h1>404 Not Found</h1>
+            <p>
+                O recurso solicitado não foi encontrado A página pode ter sido removida, movida para outro endereço ou
+                nunca ter existido.
+            </p>
+
+            <h3>Possíveis causas</h3>
+            <ul>
+                <li>URL digitada incorretamente.</li>
+                <li>Link desatualizado.</li>
+                <li>Conteúdo removido.</li>
+                <li>Falha em redirecionamento.</li>
+            </ul>
+
+            <h3>Como resolver</h3>
+            <ul>
+                <li>Revise o endereço informado.</li>
+                <li>Retorne à página inicial.</li>
+                <li>Ultilize a busca do site.</li>
+                <li>Navegue pelos menus principais.</li>
+            </ul>
+        </div>
+
+        <div class="col-5 d-flex alinhar-meio p-2">
+            <img class="img-error" src="assets/404.svg" alt="404 Not Found">
+        </div>
+    </div>
+</body>
+
+</html>
