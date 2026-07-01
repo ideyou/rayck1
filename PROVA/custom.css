@@ -1,0 +1,149 @@
+/* --- Base (main-styles) --- */
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 10em;
+    line-height: 1;
+    font-weight: 800;
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* --- Conteudo principal --- */
+.main-area {
+    width: 80vw;
+    max-width: 650px;
+    margin: auto;
+    padding: 10vh 0 22vh;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: flex-start;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.main-area img {
+    height: 30vh;
+    max-width: 80%;
+    display: block;
+    object-fit: contain;
+    margin: 5rem auto 0;
+}
+
+/* --- Fundo animado --- */
+#bg-base,
+#bg-ripple {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+}
+
+#bg-ripple {
+    z-index: -1;
+    clip-path: circle(0% at 50% 50%);
+}
+
+/* --- Footer --- */
+.barra-navegacao {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45rem;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.12);
+    z-index: 10;
+}
+
+.btn-hover {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.92);
+    padding: 0.5rem 0.95rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition:
+    transform var(--btn-tempo)ease,
+    background var(--btn-tempo)ease,
+    border-color var(--btn-tempo)ease,
+    box-shadow var(--btn-tempo)ease;
+}
+
+.btn-hover:hover {
+    transform: translateY(-4px)scale(1.04);
+    background: rgba(255, 255, 255, 0.24);
+    border-color: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+}
+
+/* --- Animações --- */
+:root {
+    --tinta-tempo: 1.5s;
+    --imagem-tempo: 0.6s;
+    --btn-tempo: 0.25s;
+}
+
+#bg-ripple.tinta-parada {
+    transition: none;
+}
+
+#bg-ripple.tinta-cheia {
+    transition: none;
+    clip-path: circle(150% at 50% 50%);
+}
+
+#bg-ripple.tinta-abre {
+    transition: clip-path var(--tinta-tempo) ease-out;
+    clip-path: circle(150% at 50% 50%);
+}
+
+#bg-ripple.tinta-fecha {
+    transition: clip-path var(--tinta-tempo) ease-in;
+    clip-path: circle(0% at 50% 50%);
+}
+
+#imagem {
+    transition:
+    opacity var(--imagem-tempo) ease,
+    transform var(--imagem-tempo) ease;
+}
+
+#imagem.trocando {
+    opacity: 0;
+    transform: scale(0.96);
+}
